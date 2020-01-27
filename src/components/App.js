@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import {Navbar} from './Navbar';
 import Usuarios from './usuarios/Usuarios';
-import Tasks from "./Tasks";
+import {Publicaciones} from './usuarios/Publicaiones'
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
              <Navbar/>
              <Switch>
                  <Route exact path={'/'} component={Usuarios} />
-                 <Route exact path={'/tareas'} component={Tasks}/>
+                 <Route exact path={'/publicaciones/:id'} component={Publicaciones}/>
              </Switch>
          </BrowserRouter>
      </Fragment>
